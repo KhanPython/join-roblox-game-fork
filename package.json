@@ -23,10 +23,27 @@
     "commands": [
       {
         "command": "join-roblox-game.joinGame",
-        "title": "Join Game"
+        "title": "Roblox: Join Game"
+      },
+      {
+        "command": "join-roblox-game.createPlaceJSON",
+        "title": "Roblox: Create `place.json`"
+      },
+      {
+        "command": "join-roblox-game.setSecurityCookie",
+        "title": "Roblox: Set security cookie"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": "/place.json",
+        "url": "./schemas/place-schema.json"
       }
     ]
   },
+  "permissions": [
+    "secrets"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
