@@ -25,17 +25,7 @@
         "command": "join-roblox-game.joinGame",
         "title": "Join Game"
       }
-    ],
-    "configuration": {
-      "title": "Join Roblox Game",
-      "properties": {
-        "join-roblox-game.cookie": {
-          "type": "string",
-          "default": "",
-          "description": "The Roblox account cookie to use for joining games."
-        }
-      }
-    }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
